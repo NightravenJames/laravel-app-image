@@ -12,7 +12,7 @@
 
 ## Available environment variables
 ```
-1.  APACHE_DOCUMENT_ROOT=/usr/src/myapp/public
+1.  WORKING_DIRECTORY=/usr/src/myapp
 ```
 
 There are better options out there like *Velocity* , *laradock*, *Homestead* . I just love less in my environments

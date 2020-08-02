@@ -11,8 +11,3 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 RUN a2enmod rewrite headers
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-
-RUN composer install --no-dev --no-interaction -o --ansi

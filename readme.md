@@ -6,7 +6,7 @@
 2.  Apache
 3.  Composer
 
-## Extensions install
+## Extensions installed
 1.  pdo_mysql
 2.  bcmath
 

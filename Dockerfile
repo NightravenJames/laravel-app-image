@@ -14,6 +14,4 @@ RUN a2enmod rewrite headers
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-COPY . ${APP_PATH}
-
 WORKDIR ${APP_PATH}

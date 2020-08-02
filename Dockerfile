@@ -3,7 +3,7 @@ FROM php:7.4-apache
 RUN apt-get update &&\
     apt-get install git unzip vim -y
 
-ENV WORKING_DIRECTORY usr/src/myapp
+ENV WORKING_DIRECTORY /usr/src/myapp
 ENV APACHE_DOCUMENT_ROOT $WORKING_DIRECTORY/public
 
 RUN docker-php-ext-install bcmath pdo_mysql

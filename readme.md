@@ -27,7 +27,7 @@ version: "3.8"
 
 services: 
     app:
-        image: raven1994/laravel:1.0-app
+        image: raven1994/laravel
         ports: 
             - 8000:80
         volumes: 

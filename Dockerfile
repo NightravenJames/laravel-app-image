@@ -9,6 +9,8 @@ ENV APACHE_DOCUMENT_ROOT $WORKING_DIRECTORY/public
 RUN docker-php-ext-install bcmath pdo_mysql
 
 COPY init.sh ${PATH}/init.sh
+RUN chgrp -R www-data ${PATH}/init.sh
+RUN chmod -R ug+rwx ${PATH}/init.sh
 
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf

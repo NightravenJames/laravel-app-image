@@ -40,7 +40,7 @@ version: "3.8"
 
 services: 
     app:
-        image: raven1994/laravel-app:0.0.0
+        image: mywebapp
         ports: 
             - 8000:80
         volumes: 
